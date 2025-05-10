@@ -855,19 +855,6 @@ class cjToolbox {
           blockType: BlockType.XML,
           xml: '<block type="operator_join"><value name="STRING1"><shadow type="matrix"><field name="MATRIX">1111110101001000010001110</field></shadow></value><value name="STRING2"><shadow type="text"><field name="TEXT"></field></shadow></value></block>'
         },
-        
-
-        // 更多
-        {
-          blockType: BlockType.LABEL,
-          text: this.formatMessage('More Blocks')
-        },
-        {
-          opcode: 'scratch_lang',
-          blockType:BlockType.REPORTER,
-          text:this.formatMessage('Scratch language'),
-          disableMonitor:true
-        }
       ],
       menus: {
         editors: {
@@ -1056,14 +1043,6 @@ class cjToolbox {
           }
         }
       }
-    }
-
-    scratch_lang(){
-      return this.formatMessage("English")
-    }
-
-    doc(){
-      open("https://ccw.site/student/268020436")
     }
 
     is(args){
